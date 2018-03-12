@@ -47,8 +47,9 @@ ENV BASH_ENV=${HTTPD_APP_ROOT}/scl_enable \
 COPY ./s2i/bin/ $STI_SCRIPTS_PATH
 COPY ./root /
 
-#RUN yum groupinstall -y "Development Tools"
-RUN yum remove -y git &&  yum install -y gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel python-pip wget curl-devel
+RUN yum groupinstall -y "Development Tools"
+RUN yum remove -y git 
+RUN  yum install -y gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel python-pip wget curl-devel
 
 RUN wget -P /tmp https://www.kernel.org/pub/software/scm/git/git-2.9.5.tar.gz && \
     tar -zxf /tmp/git-2.9.5.tar.gz -C /tmp && \
