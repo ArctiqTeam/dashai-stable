@@ -47,24 +47,24 @@ ENV BASH_ENV=${HTTPD_APP_ROOT}/scl_enable \
 COPY ./s2i/bin/ $STI_SCRIPTS_PATH
 COPY ./root /
 
+#RUN yum groupinstall -y "Development Tools"
+RUN yum remove -y git &&  yum install -y gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel python-pip wget curl-devel
 
-RUN yum groupinstall -y "Development Tools"
-RUN yum remove -y git
-RUN yum -y install python-pip wget curl-devel gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
+RUN wget -P /tmp https://www.kernel.org/pub/software/scm/git/git-2.9.5.tar.gz && \
+    tar -zxf /tmp/git-2.9.5.tar.gz -C /tmp && \
+    cd /tmp/git-*  && \ 
+    make configure && ./configure --prefix=/usr/local && \
+    make install && \
+    cp /usr/local/bin/git /usr/bin/git
 
-RUN wget -P /tmp https://www.kernel.org/pub/software/scm/git/git-2.9.5.tar.gz
-RUN tar -zxf /tmp/git-2.9.5.tar.gz -C /tmp &&  /tmp/git-* && make configure && ./configure --prefix=/usr/local && make install
-RUN cp /usr/local/bin/git /usr/bin/git
-
-RUN wget -P /tmp https://github.com/openshift/origin/releases/download/v3.7.1/openshift-origin-client-tools-v3.7.1-ab0f056-linux-64bit.tar.gz
-RUN tar -zxvf  /tmp/openshift-origin-client-tools-v3.7.1-ab0f056-linux-64bit.tar.gz -C /tmp &&  mv /tmp/openshift-origin-client-tools-v3.7.1-ab0f056-linux-64bit/oc /usr/bin 
-RUN rm -rf /tmp/*
+RUN wget -P /tmp https://github.com/openshift/origin/releases/download/v3.7.1/openshift-origin-client-tools-v3.7.1-ab0f056-linux-64bit.tar.gz && \
+    tar -zxvf  /tmp/openshift-origin-client-tools-v3.7.1-ab0f056-linux-64bit.tar.gz -C /tmp && \
+    mv /tmp/openshift-origin-client-tools-v3.7.1-ab0f056-linux-64bit/oc /usr/bin &&  \
+    rm -rf /tmp/*
 
 RUN mkdir /opt/app-root/src/.kube &&  chmod 777 /opt/app-root/src/.kube
 
-RUN pip install --upgrade pip
-RUN pip install flask datetime  datetime oauth2client  httplib2  wtforms  urllib3  requests  python-dateutil
-RUN pip install --upgrade google-api-python-client
+RUN pip install --upgrade pip flask datetime  oauth2client  httplib2  wtforms  urllib3 requests  python-dateutil google-api-python-client
 
 RUN mkdir -p /dashai/
 ADD app.tgz /dashai/
