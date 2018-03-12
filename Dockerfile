@@ -47,16 +47,8 @@ ENV BASH_ENV=${HTTPD_APP_ROOT}/scl_enable \
 COPY ./s2i/bin/ $STI_SCRIPTS_PATH
 COPY ./root /
 
-RUN yum groupinstall -y "Development Tools"
-RUN yum remove -y git 
-RUN  yum install -y gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel python-pip wget curl-devel
-
-RUN wget -P /tmp https://www.kernel.org/pub/software/scm/git/git-2.9.5.tar.gz && \
-    tar -zxf /tmp/git-2.9.5.tar.gz -C /tmp && \
-    cd /tmp/git-*  && \ 
-    make configure && ./configure --prefix=/usr/local && \
-    make install && \
-    cp /usr/local/bin/git /usr/bin/git
+RUN rpm -ivh https://packages.endpoint.com/rhel/7/os/x86_64//git-2.8.4-1.ep7.x86_64.rpm
+RUN  yum install -y python-pip wget https://packages.endpoint.com/rhel/7/os/x86_64//git-2.8.4-1.ep7.x86_64.rpm
 
 RUN wget -P /tmp https://github.com/openshift/origin/releases/download/v3.7.1/openshift-origin-client-tools-v3.7.1-ab0f056-linux-64bit.tar.gz && \
     tar -zxvf  /tmp/openshift-origin-client-tools-v3.7.1-ab0f056-linux-64bit.tar.gz -C /tmp && \
