@@ -47,7 +47,7 @@ ENV BASH_ENV=${HTTPD_APP_ROOT}/scl_enable \
 COPY ./s2i/bin/ $STI_SCRIPTS_PATH
 COPY ./root /
 
-RUN rpm -ivh https://packages.endpoint.com/rhel/7/os/x86_64//git-2.8.4-1.ep7.x86_64.rpm
+RUN rpm -ivh https://packages.endpoint.com/rhel/7/os/x86_64/endpoint-repo-1.7-1.x86_64.rpm
 RUN  yum install -y python-pip wget https://packages.endpoint.com/rhel/7/os/x86_64//git-2.8.4-1.ep7.x86_64.rpm
 
 RUN wget -P /tmp https://github.com/openshift/origin/releases/download/v3.7.1/openshift-origin-client-tools-v3.7.1-ab0f056-linux-64bit.tar.gz && \
