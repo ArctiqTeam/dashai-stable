@@ -9,7 +9,7 @@
 
     ---
 
-    **You will need OC binaries to utilize command line tools.** 
+    **You will need OC binaries to utilize command line tools.**
 
     *Getting Started:*
 
@@ -39,18 +39,18 @@
 
     You can type oc project to validate what project you are in.
 
-        oc new-project dashai 
+        oc new-project dashai
 
     **Deploy the based Dashai Web Component / Configurator**
 
     Stable Release:
 
-        oc new-app https://github.com/ArctiqTeam/dashai-stable --name cfgtool; 
+        oc new-app https://github.com/ArctiqTeam/dashai-stable --name cfgtool;
         oc expose svc/cfgtool
 
     RnD Release:
 
-        oc new-app https://github.com/alyarctiq/redoctober --name cfgtool; 
+        oc new-app https://github.com/alyarctiq/redoctober --name cfgtool;
         oc expose svc/cfgtool
 
     **Go back to the OpenShift WebUI:**
@@ -114,17 +114,17 @@
     ![](https://static.notion-static.com/16a04bd5-485a-4ba0-ab04-8af00e1eacb0/Screenshot_2018-02-12_14.28.14.png)
 
         oc volume dc/prometheus --add  --sub-path=data --name=prometheus-volume-1 --type=persistentVolumeClaim --claim-name=prometheus --overwrite --mount-path=/prometheus
-        
-        
+
+
         sudo curl -s cfgtool-arctiq-dashai.apps.ocp.lab.arctiq.ca/telegrafget | sh
-        
+
         wget -O /tmp/dashai-host-poller.sh cfgtool-arctiq-dashai.apps.ocp.lab.arctiq.ca/telegrafget
-        
+
         chmod +x /tmp/dashai-host-poller.sh
-        
+
         sudo /tmp/dashai-host-poller.sh
-        
-        
+
+
 
   - Deploy OCP Collector (Check out your DashBoard)
 
@@ -174,7 +174,7 @@
 
     ![](https://static.notion-static.com/379aa939-39ab-47e0-92ad-555997580852/Screenshot_2018-03-18_17.32.29.png)
 
-    **Run the command above on you OpenShift hosts and you will start to see data** 
+    **Run the command above on you OpenShift hosts and you will start to see data**
 
   - Deploy Google Sheet
 
