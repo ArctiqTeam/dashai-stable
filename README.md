@@ -5,7 +5,7 @@
 
     First Create a Project from the OpenShift WebUI or OC Command Line
 
-    ![](https://static.notion-static.com/613fa2cf-ef29-4d60-ba17-e2c4c58e3c34/Screenshot_2018-03-18_14.30.34.png)
+    ![](/docs/images/ocp-project.png.png)
 
     ---
 
