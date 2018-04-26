@@ -1,5 +1,37 @@
 # Deploy Google Sheets Collector
 
+Let's first prepare our data file that will feed the dashai collector
+
+Download this example file and upload into into you google account
+
+[https://github.com/ArctiqTeam/dashai-stable/blob/master/Dashai_Sample_Sheet.xlsx](https://github.com/ArctiqTeam/dashai-stable/blob/master/Dashai_Sample_Sheet.xlsx)
+
+---
+
+![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F29c7b13a-4f19-45dd-9d3a-6d0e376dadfc%2FScreenshot2018-04-2617.29.13.png)
+
+We figured NHL hockey stats we appropriate to stick to our Canadian roots
+
+The first tab in the sheet is where dashai will pull data from, make sure you maintain the format of the document. The "Section" comes in handy later, it will allow you to graph that entire dataset in a single section of the dashboard. (not having to add each row for example)
+
+![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F0c119240-2d98-49e1-ac7a-a9efc5db0382%2FScreenshot2018-04-2617.47.03.png)
+
+The "Prep Sheet" is handy when preparing your data, since dashai will pick up any data you put into the first sheet "Arctiq - Dashboard" it is recommended to prepare your data in another tab and then paste it into the main sheet to start the data connection and limit data fields you don't want. You can also use other other cells in any tab to feed a cell in the main sheet. An example of a useful service to feed a good sheet is Zapier:
+
+[https://zapier.com/apps/google-sheets/integrations](https://zapier.com/apps/google-sheets/integrations)
+
+For now we would recommend just starting with the sample sheet to test the integration then add you own data and customize your dashboard to fit your needs.
+
+---
+
+Here is an example of the working integration:
+
+![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcf0978d0-08f7-40bf-80c9-a8ca9fd283ef%2FScreenshot2018-04-2618.31.50.png)
+
+---
+
+Ok now that our google sheet is ready - Let's go ahead and deploy the sheets collector
+
 Click on the left menu again - Choose "Collectors" from the menu
 
 You are going to select the "Google Sheets" collector
@@ -56,7 +88,7 @@ Select your "Dashboards" from the left hand Dashai menu
 
 ![](https://static.notion-static.com/88090c34-4820-412f-9a62-cce8092483cf/Screenshot_2018-03-18_17.41.02.png)
 
-You can see your new Dashboard "all the data coming from your google sheet"
+You can see your new Dashboard "all the data is coming from your google sheet"
 
 ![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4a84373f-c59e-4a4f-89da-ebca20ff7173%2FScreenshot2018-04-2423.31.49.png)
 
