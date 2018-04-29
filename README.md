@@ -1,6 +1,8 @@
 # Dashai Deployment Documentation
 
-* [Deploy OpenShift on Mac via "oc cluster up"](https://github.com/ArctiqTeam/dashai-stable/tree/master/docs/00_deploy_openshift_onmac_via_oc_cluster_up)
+* [Deploy OpenShift on Mac with docker & "oc cluster up"](https://github.com/ArctiqTeam/dashai-stable/tree/master/docs/00_deploy_openshift_onmac_via_oc_cluster_up)
+* [Deploy OpenShift on Fedora 27 with docker & "oc cluster up"](https://github.com/ArctiqTeam/dashai-stable/tree/master/docs/00_deploy_openshift_onmac_via_oc_cluster_up)
+* [Deploy OpenShift on Windows with docker & "oc cluster up"](https://github.com/ArctiqTeam/dashai-stable/tree/master/docs/00_deploy_openshift_onmac_via_oc_cluster_up)
 * [Initial Dashai Deployment on OpenShift](https://github.com/ArctiqTeam/dashai-stable/tree/master/docs/01_initial_ocp_install)
 * [Connect to Dashai WebUI and Deploy Base Components](https://github.com/ArctiqTeam/dashai-stable/tree/master/docs/02_connect_and_core_components)
 * [Deploy OpenShift Cluster Collector and View Dashboard](https://github.com/ArctiqTeam/dashai-stable/tree/master/docs/03_deploy_ocp_collector_view_dashboard)
