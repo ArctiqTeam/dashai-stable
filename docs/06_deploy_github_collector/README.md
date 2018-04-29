@@ -69,15 +69,3 @@ Go ahead and click on the "Dashboard" on the left side and "Launch" your Dashboa
 We have loaded some default graphs for you (feel free to customize)
 
 ![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc4b97289-56f8-43ab-bf54-f0bf114f4458%2FScreenshot2018-04-2816.36.13.png)
-
-    oc set env dc/dashai-github REPOS='ArctiqTeam/dashai-stable,tensorflow/tensorflow, ansible/ansible, openshift/origin'
-    deploymentconfig "dashai-github" updated
-
-    oc set env dc/dashai-github REPOS='ArctiqTeam/dashai-stable'
-
-
-    ArctiqTeam/dashai-stable
-
-sda
-
-    oc set env dc/dashai-github GITHUB_TOKEN='ee1a5e9a2e990c30048be4bbfedebb89bcda283e'
