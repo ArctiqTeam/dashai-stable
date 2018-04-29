@@ -28,11 +28,9 @@ Login into the Grafana WebUI - (admin - dashai) - (*You can change the password 
 
 You will see your main OpenShift Cluster Dashboard (We loaded some baseline metrics for you)
 
-![](../images/Screenshot_2018-03-18_17.21.48.png)
+![](../images/Screenshot_2018-03-18_17.21.28.png)
 
 You can select also each node in your cluster to view specific node data
-
-![](../images/Screenshot_2018-03-18_17.22.28.png)
 
 ![](../images/Screenshot_2018-03-18_17.22.29.png)
 
