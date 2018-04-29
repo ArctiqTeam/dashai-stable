@@ -24,7 +24,15 @@ First Create a Project from the OpenShift WebUI or OC Command Line Client:
 
 **You can login using the API token available via the OpenShift WEBUI**
 
-Copy the token and paste from you OC client terminal
+Click on the **?** in the top right corner - choose "Command Line Tools"
+
+We will use this again later on - keep it handy...
+
+![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8bfee69b-60ca-496a-b594-42863a63321f%2FScreenshot2018-04-2422.31.29.png)
+
+Copy the token and paste it in your terminal (make sure you have the oc tools configured)
+
+This will log you into your cluster
 
 ![](https://static.notion-static.com/ad660b8c-9566-419b-8bcd-92d515518cd3/Screenshot_2018-03-18_14.39.04.png)
 
@@ -45,6 +53,8 @@ Stable Release:
     oc new-app https://github.com/ArctiqTeam/dashai-stable --name cfgtool;
 
     oc expose svc/cfgtool
+
+    oc adm policy add-cluster-role-to-user cluster-admin developer
 
 RnD Release: (Deploy @ your own risk!!!)
 

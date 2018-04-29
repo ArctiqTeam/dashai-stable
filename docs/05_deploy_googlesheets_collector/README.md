@@ -36,7 +36,7 @@ Click on the left menu again - Choose "Collectors" from the menu
 
 You are going to select the "Google Sheets" collector
 
-![](https://static.notion-static.com/1b9438dd-cb26-4fd9-a4b5-054b0db3d379/Screenshot_2018-03-18_17.34.10.png)
+![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F65b391c8-a3c9-45d9-b964-dc61d918e673%2FScreenshot2018-04-2817.30.44.png)
 
 Go ahead and select "Deploy" - You will be prompted for the information soon"
 
