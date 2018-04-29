@@ -28,13 +28,13 @@ Click on the **?** in the top right corner - choose "Command Line Tools"
 
 We will use this again later on - keep it handy...
 
-![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8bfee69b-60ca-496a-b594-42863a63321f%2FScreenshot2018-04-2422.31.29.png)
+![](../images/Screenshot2018-04-2422.31.29.png)
 
 Copy the token and paste it in your terminal (make sure you have the oc tools configured)
 
 This will log you into your cluster
 
-![](https://static.notion-static.com/ad660b8c-9566-419b-8bcd-92d515518cd3/Screenshot_2018-03-18_14.39.04.png)
+![](../images/Screenshot_2018-03-18_14.39.04.png)
 
 ---
 
@@ -66,16 +66,16 @@ RnD Release: (Deploy @ your own risk!!!)
 
 You will see the new project in the webui, have a look and make sure the service was created (You will see the URL near the top on the right side) - we will use this later...
 
-![](https://static.notion-static.com/271e800e-c566-4a94-8664-5982336fba8e/Screenshot_2018-02-12_13.58.55.png)
+![](../images/Screenshot_2018-02-12_13.58.55.png)
 
 You will also be able see the build start - look under builds
 
-![](https://static.notion-static.com/0dbc504a-4bcd-4dab-a846-ae402c16cf4b/Screenshot_2018-02-12_13.59.36.png)
+![](../images/Screenshot_2018-02-12_13.59.36.png)
 
 You can monitor the build - view the build log
 
-![](https://static.notion-static.com/a15a61f8-fa95-4fd8-b794-9bddc2a41a6f/Screenshot_2018-02-12_14.03.15.png)
+![](../images/Screenshot_2018-02-12_14.03.15.png)
 
 After the build finished - you can also see the deployer POD and cfgtool POD
 
-![](https://static.notion-static.com/3911ee97-2845-4c54-8fd6-d3acbbd265aa/Screenshot_2018-02-12_14.12.24.png)
+![](../images/Screenshot_2018-02-12_14.12.24.png)

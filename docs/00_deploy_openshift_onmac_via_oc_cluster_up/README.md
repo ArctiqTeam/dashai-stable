@@ -8,15 +8,15 @@ Grab the required files here: [https://download.docker.com/mac/stable/21698/Dock
 
 *** We recommend not going above version - Version 17.09.0
 
-![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F335dbb4c-1165-4e5b-8fda-92662dee7d77%2FScreenshot2018-04-2817.33.59.png)
+![](../images/Screenshot2018-04-2817.33.59.png)
 
 You are going to have to add this IP Range to "Insecure Registries"
 
-![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F17351935-eddd-4a57-8c20-8f568632dc2d%2FScreenshot2018-04-2817.35.45.png)
+![](../images/Screenshot2018-04-2817.35.45.png)
 
 Next thing we need is the "OC Client Tools" - You can grab them from Red Hat here:
 
-![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe4be3c08-2203-4041-b70a-ccb5375cec07%2FScreenshot2018-04-2817.40.41.png)
+![](../images/Screenshot2018-04-2817.40.41.png)
 
 Documentation explaining how to get things up and running are also available on this site
 
@@ -24,7 +24,7 @@ If you don't have an account you can create a free developer here:
 
 [https://www.openshift.com/promotions/for-developers.html](https://www.openshift.com/promotions/for-developers.html)
 
-![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb884b90d-c9fd-4fa4-bac2-f863c0c511d8%2FScreenshot2018-04-2817.45.00.png)
+![](../images/Screenshot2018-04-2817.45.00.png)
 
 After you download the "oc binary" - find you path
 
@@ -103,8 +103,8 @@ Let's elevate the "developer" account to be a cluster admin
 
 Open up your browser and make sure you can login into the OpenShift WebUI
 
-![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F5c32b54d-af26-41fc-8d0c-702d3a124113%2FScreenshot2018-04-2818.02.18.png)
+![](../images/Screenshot2018-04-2818.02.18.png)
 
-![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7f9ec7be-6df0-48c0-8152-a4ab456e9cfe%2FScreenshot2018-04-2818.02.32.png)
+![](../images/Screenshot2018-04-2818.02.32.png)
 
 Ok you are up and running with "oc cluster up" - Have fun...
