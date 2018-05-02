@@ -13,28 +13,28 @@ Note: Windows 10 Pro is a prerequisite (Docker will not run on Windows 10 Home)
 - Install Docker
   - Accept the security prompt
 
-    ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9af46363-d2bd-4c59-9afe-88ee767f5e78%2FUntitled.png)
+    ![](../images/2.png)
 
   - Option #1 - Make sure you choose option to use Linux Containers (default during the installation), Click OK
     - Note: Windows will produce an error if Windows containers are used:
       - Error: Error response from daemon: {"message":"Windows does not support privileged mode"}
 
-    ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F66eb167c-2ae6-4f05-88f4-79ab3f2d954c%2FUntitled.png)
+    ![](../images/3.png)
 
-  ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F411382aa-9204-4087-9081-b4b67f03bbe9%2FUntitled.png)
+  ![](../images/4.png)
 
   - Once installation is complete, logo
 
-  ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F89a6be2e-0adc-4d1d-b920-cabe1c359e2a%2FUntitled.png)
+  ![](../images/5.png)
 
   - After logging back in, you will be prompted to perform a reboot, Click OK
 
-  ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F03dc7b17-4ae6-48ee-ae80-6b182dc42d02%2FUntitled.png)
+  ![](../images/6.png)
 
   - Reboot
   - Docker will start automatically on boot, you will see a screen like this:
 
-    ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6bc45956-be58-4827-8410-c9ed43d5c82b%2FUntitled.png)
+    ![](../images/7.png)
 
   - Ensure Docker is configured to run with Insecure Registry
     - Right click on the Docker icon in the taskbar hub, select settings
@@ -43,7 +43,7 @@ Note: Windows 10 Pro is a prerequisite (Docker will not run on Windows 10 Home)
     - Enter the subnet 172.30.0.0/16
     - Click Apply, Docker will restart
 
-    ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F70a6a684-88cf-4fa5-af82-1dc27b589e26%2FUntitled.png)
+    ![](../images/8.png)
 
   - OC Client Tools: Next thing we need is the "OC Client Tools" - You can grab them from Red Hat here:
 
@@ -51,7 +51,7 @@ Note: Windows 10 Pro is a prerequisite (Docker will not run on Windows 10 Home)
 
     Download: openshift-origin-client-tools-v3.7.2-282e43f-windows.zip
 
-    ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc5cfe908-d0d6-4fa7-9fc1-f7cc1db0dee7%2FUntitled.png)
+    ![](../images/9.png)
 
   - Installation instructions:
 
@@ -63,15 +63,15 @@ Note: Windows 10 Pro is a prerequisite (Docker will not run on Windows 10 Home)
 
       ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F67aa127d-faa5-491d-b0f9-f9f05eee975d%2FUntitled.png)
 
-      ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4f47bc0a-636b-467c-a229-54e7b09bb79e%2FUntitled.png)
+      ![](../images/10.png)
 
     - Click the "path" variable and click New
 
-      ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F0df3e353-2968-4e1d-b7f8-4f56e46ca6e8%2FUntitled.png)
+      ![](../images/11.png)
 
     - Enter C:\Program Files (x86)\OpenShift
 
-      ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe9d48684-3b68-4ad3-865f-e8942fa9cd72%2FUntitled.png)
+      ![](../images/12.png)
 
     - Click OK to save
     - Open a Command Prompt
@@ -135,11 +135,11 @@ Note: Windows 10 Pro is a prerequisite (Docker will not run on Windows 10 Home)
 
     - Access the Openshift origin dashboard
 
-    ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F24fc0e00-7d09-4469-bcec-5702895a33c5%2FUntitled.png)
+    ![](../images/13.png)
 
     - Dashboard
 
-    ![](../images/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffe144e61-6e72-4416-80a3-9a96a3bea97f%2FUntitled.png)
+    ![](../images/14.png)
 
     - Before creating a project, Git must be installed on the Windows system and added to the PATH, use the following link:
       - [https://git-scm.com/download/win](https://git-scm.com/download/win)
