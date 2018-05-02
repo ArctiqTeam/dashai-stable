@@ -7,7 +7,7 @@ Note: Windows 10 Pro is a prerequisite (Docker will not run on Windows 10 Home)
 - Windows download URL: [https://store.docker.com/editions/community/docker-ce-desktop-windows](https://store.docker.com/editions/community/docker-ce-desktop-windows)
 - Download docker
 
-![](../images/https_%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc50c328a-8114-4a40-aff5-9db22da04b35%2FUntitled.png)
+![](../images/1.png)
 
 
 - Install Docker
