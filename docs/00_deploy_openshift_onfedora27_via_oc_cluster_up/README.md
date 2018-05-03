@@ -47,9 +47,9 @@ First thing we need to do is get Docker up and running and configured on Fedora
    [openshift-origin-client-tools-VERSION-linux-64bit.tar.gz](https://github.com/openshift/origin/releases)
    and place it in your path.
 
-* We're going to bring OpenShfit up not on your local "127.0.0.1" adress, you'll have issues using local address
+* We're going to bring OpenShfit up not on your local `127.0.0.1` adress, you'll have issues using local address
 
-  - Let's find your local IP Address, in my case my ip address is "10.0.10.79"
+  - Let's find your local IP Address, in my case my ip address is `10.0.10.79`
     ```
     [phil@c3po docker]$ ip a
     1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
