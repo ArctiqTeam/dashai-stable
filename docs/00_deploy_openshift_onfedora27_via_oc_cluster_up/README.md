@@ -76,7 +76,7 @@ First thing we need to do is get Docker up and running and configured on Fedora
   To login as administrator:
     oc login -u system:admin
   ```
-* Go ahead and make sure you can login to your cluster"
+* Go ahead and make sure you can login to your cluster
   ```
   [phil@c3po docker]$ oc login -u system:admin
   Logged into "https://10.0.10.79:8443" as "system:admin" using existing credentials.
@@ -99,10 +99,10 @@ First thing we need to do is get Docker up and running and configured on Fedora
   cluster role "cluster-admin" added: "developer"
   ```
 
-Open up your browser and make sure you can login into the OpenShift WebUI
+* Open up your browser and make sure you can login into the OpenShift WebUI
 
 ![](../images/Screenshot2018-04-2818.02.18.png)
 
 ![](../images/Screenshot2018-04-2818.02.32.png)
 
-Ok you are up and running with "oc cluster up" - Have fun...
+**Ok you are up and running with "oc cluster up" - Have fun...**
