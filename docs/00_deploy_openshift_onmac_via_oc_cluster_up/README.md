@@ -48,6 +48,10 @@ Let's fine you local IP Address, in my case my ip address is "10.29.139.177"
     	inet6 fe80::407c:74ff:feae:e421%awdl0 prefixlen 64 scopeid 0x9
     	inet6 fe80::5d47:1187:e0f:97e0%utun0 prefixlen 64 scopeid 0xa
 
+You may need to authenticate with the Red Hat Registry using your existing partner/customer credentials:
+
+    docker login registry.redhat.io
+
 Run this command to start up OpenShift "
 
     oc cluster up --public-hostname 10.29.139.177
